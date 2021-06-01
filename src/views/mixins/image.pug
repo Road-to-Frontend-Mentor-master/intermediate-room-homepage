@@ -1,0 +1,6 @@
+mixin image({ name, type = "images", alt, extraClasses = '', extension = 'jpg' })
+  - const imageSrc = `assets/${type}/${name}.${extension}`
+  - const imageclass = `image ${extraClasses}`.trimRight()
+
+  img(class=imageclass src=imageSrc)
+

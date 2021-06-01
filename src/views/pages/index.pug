@@ -1,3 +1,5 @@
+include ../mixins/image
+
 doctype html
 html(lang="en")
   head
@@ -6,5 +8,9 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Index
   body
-    include ../mixins/nav 
+    include ../mixins/nav
+
+    main.main
+      include index/slider-section
+      include index/about-furtniture
 

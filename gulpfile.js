@@ -7,14 +7,14 @@ const devConfig = require('./dev.config')
 gulp.task('pug', () => (
   gulp
     .src('./src/views/pages/*.pug')
-    .pipe(pug({ pretty: false })))
-    .pipe(gulp.dest(`./${devConfig.dest}`)
-))
+    .pipe(pug({pretty: true})))
+  .pipe(gulp.dest(`./${devConfig.dest}`)
+  ))
 
 gulp.task('sass', () => (
   gulp
     .src('./src/scss/styles.scss')
-    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer())
     .pipe(gulp.dest(`./${devConfig.dest}/stylesheets`))
 ))
