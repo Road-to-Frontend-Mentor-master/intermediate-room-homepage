@@ -1,5 +1,15 @@
-body {
-  display: grid;
-  background-image: linear-gradient(to right, red, blue);
-  color: blue;
-}
+@import "config/variables";
+
+@import "mixins/desktop";
+@import "mixins/to-desktop";
+
+@import "functions/rem";
+
+@import "base/base";
+
+@import "blocks/title";
+@import "blocks/paragraph";
+
+@import "layout/main";
+@import "layout/section";
+
