@@ -6,18 +6,23 @@
     extension: 'svg'
   }
 
+- const sliderImages = ['image-hero-1', 'image-hero-2', 'image-hero-3']
+
 section.section.section--slider
-  .slider-images
-    .content
-      h2#dynamic-title.title.title--h2 Discover innovative ways to decorete
-      p#dynamic-paragraph.paragraph.
-        We provide unmatched quality, comfort, and style for property owners
-        across the country. Our experts combine form and function in bringing
-        your vision to life. Create a room in your own style with our collection and
-        make your property a reflection of you and what you love.
-      a.link(href="#") Shop now
-    .slider-arrows
-      span.icon-container
-        +image(leftArrowImage)
-      span.icon-container
-        +image({ name: 'icon-angle-right', alt: 'Icon angle right', type: 'icons', extension: 'svg' })
+  ul.slider-images
+    each sliderImage in sliderImages
+      li.slider-images__image-container
+        img.slider-images__image(src=`assets/images/mobile-${sliderImage}.jpg` srcset=`assets/images/mobile-${sliderImage}.jpg 375w, assets/images/desktop-${sliderImage}.jpg 840w` sizes="(max-width: 1440px) 300px, 800px")
+  .content
+    h2#dynamic-title.title.title--h2 Discover innovative ways to decorete
+    p#dynamic-paragraph.paragraph.
+      We provide unmatched quality, comfort, and style for property owners
+      across the country. Our experts combine form and function in bringing
+      your vision to life. Create a room in your own style with our collection and
+      make your property a reflection of you and what you love.
+    a.link(href="#") Shop now
+  .slider-arrows
+    span.icon-container
+      +image(leftArrowImage)
+    span.icon-container
+      +image({ name: 'icon-angle-right', alt: 'Icon angle right', type: 'icons', extension: 'svg' })
