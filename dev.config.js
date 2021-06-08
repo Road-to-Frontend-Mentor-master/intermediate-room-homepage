@@ -1,3 +1,4 @@
 module.exports = {
-  dest: 'docs'
+  dest: 'docs',
+  mode: 'pro'
 }

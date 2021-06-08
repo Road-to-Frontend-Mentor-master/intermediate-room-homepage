@@ -1,0 +1,26 @@
+.slider {
+	display: flex;
+	overflow: hidden;
+
+	&__image-container {
+		min-width: 100%;
+	}
+}
+
+.slider-arrows {
+	position: absolute;
+	top: 304px;
+	right: 0;
+	background-color: #000000;
+	width: 112px;
+	display: flex;
+	height: 56px;
+
+	&__icon-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+	}
+}
+

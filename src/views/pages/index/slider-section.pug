@@ -9,10 +9,12 @@
 - const sliderImages = ['image-hero-1', 'image-hero-2', 'image-hero-3']
 
 section.section.section--slider
-  ul.slider-images
+  ul.slider
     each sliderImage in sliderImages
-      li.slider-images__image-container
-        img.slider-images__image(src=`assets/images/mobile-${sliderImage}.jpg` srcset=`assets/images/mobile-${sliderImage}.jpg 375w, assets/images/desktop-${sliderImage}.jpg 840w` sizes="(max-width: 1440px) 300px, 800px")
+      li.slider__image-container
+        picture
+          source(srcset=`assets/images/desktop-${sliderImage}.jpg` media="(min-width: 1440px)")
+          img(src=`assets/images/mobile-${sliderImage}.jpg`)
   .content
     h2#dynamic-title.title.title--h2 Discover innovative ways to decorete
     p#dynamic-paragraph.paragraph.
@@ -22,7 +24,7 @@ section.section.section--slider
       make your property a reflection of you and what you love.
     a.link(href="#") Shop now
   .slider-arrows
-    span.icon-container
+    span.icon-container.slider-arrows__icon-container
       +image(leftArrowImage)
-    span.icon-container
+    span.icon-container.slider-arrows__icon-container
       +image({ name: 'icon-angle-right', alt: 'Icon angle right', type: 'icons', extension: 'svg' })

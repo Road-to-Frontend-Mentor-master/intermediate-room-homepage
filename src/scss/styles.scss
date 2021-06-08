@@ -1,15 +1,9 @@
-@import "config/variables";
-
-@import "mixins/desktop";
-@import "mixins/to-desktop";
-
 @import "functions/rem";
 
 @import "base/base";
 
-@import "blocks/title";
-@import "blocks/paragraph";
+@import "blocks";
+@import "layout";
 
-@import "layout/main";
-@import "layout/section";
+@import "utils/utils";
 

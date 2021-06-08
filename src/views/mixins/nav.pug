@@ -1,15 +1,17 @@
 nav.main-navigation
   span.toggle-menu-container
     +image({ name: 'icon-hamburger', extension: 'svg', alt: 'Toggle menu icon', type: 'icons' })
-  a.logo(href="#")
+  a.logo.main-navigation__logo(href="#")
     +image({ name: 'logo', type: 'icons', alt: 'Site logo', extension: 'svg' })
-  ul.menu
-    li.menu__item
-      a.menu__link(href="#") Home
-    li.menu__item
-      a.menu__link(href="#") Shop
-    li.menu__item
-      a.menu__link(href="#") About
-    li.menu__item
-      a.menu__link(href="#") Contact
+  .menu-container
+    +image({ name: 'icon-close', extension: 'svg', alt: '', type: 'icons', extraClasses: 'menu-container__close-icon' })
+    ul.menu
+      li.menu__item
+        a.menu__link(href="#") Home
+      li.menu__item
+        a.menu__link(href="#") Shop
+      li.menu__item
+        a.menu__link(href="#") About
+      li.menu__item
+        a.menu__link(href="#") Contact
 

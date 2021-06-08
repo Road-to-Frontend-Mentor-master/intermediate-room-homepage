@@ -4,23 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/styles.css">
     <title>Index</title>
   </head>
   <body>
-    <nav class="main-navigation"><span class="toggle-menu-container"><img class="image" src="assets/icons/icon-hamburger.svg"/></span><a class="logo" href="#"><img class="image" src="assets/icons/logo.svg"/></a>
-      <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Shop</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-      </ul>
+    <nav class="main-navigation"><span class="toggle-menu-container"><img class="image" src="assets/icons/icon-hamburger.svg"/></span><a class="logo main-navigation__logo" href="#"><img class="image" src="assets/icons/logo.svg"/></a>
+      <div class="menu-container"><img class="image menu-container__close-icon" src="assets/icons/icon-close.svg"/>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Shop</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <main class="main">
       <section class="section section--slider">
-        <ul class="slider-images">
-          <li class="slider-images__image-container"><img class="slider-images__image" src="assets/images/mobile-image-hero-1.jpg" srcset="assets/images/mobile-image-hero-1.jpg 375w, assets/images/desktop-image-hero-1.jpg 840w" sizes="(max-width: 1440px) 300px, 800px"></li>
-          <li class="slider-images__image-container"><img class="slider-images__image" src="assets/images/mobile-image-hero-2.jpg" srcset="assets/images/mobile-image-hero-2.jpg 375w, assets/images/desktop-image-hero-2.jpg 840w" sizes="(max-width: 1440px) 300px, 800px"></li>
-          <li class="slider-images__image-container"><img class="slider-images__image" src="assets/images/mobile-image-hero-3.jpg" srcset="assets/images/mobile-image-hero-3.jpg 375w, assets/images/desktop-image-hero-3.jpg 840w" sizes="(max-width: 1440px) 300px, 800px"></li>
+        <ul class="slider">
+          <li class="slider__image-container">
+            <picture>
+              <source srcset="assets/images/desktop-image-hero-1.jpg" media="(min-width: 1440px)"><img src="assets/images/mobile-image-hero-1.jpg">
+            </picture>
+          </li>
+          <li class="slider__image-container">
+            <picture>
+              <source srcset="assets/images/desktop-image-hero-2.jpg" media="(min-width: 1440px)"><img src="assets/images/mobile-image-hero-2.jpg">
+            </picture>
+          </li>
+          <li class="slider__image-container">
+            <picture>
+              <source srcset="assets/images/desktop-image-hero-3.jpg" media="(min-width: 1440px)"><img src="assets/images/mobile-image-hero-3.jpg">
+            </picture>
+          </li>
         </ul>
         <div class="content">
           <h2 class="title title--h2" id="dynamic-title">Discover innovative ways to decorete</h2>
@@ -31,12 +48,12 @@
             make your property a reflection of you and what you love.
           </p><a class="link" href="#">Shop now</a>
         </div>
-        <div class="slider-arrows"><span class="icon-container"><img class="image" src="assets/icons/icon-angle-left.svg"/></span><span class="icon-container"><img class="image" src="assets/icons/icon-angle-right.svg"/></span></div>
+        <div class="slider-arrows"><span class="icon-container slider-arrows__icon-container"><img class="image" src="assets/icons/icon-angle-left.svg"/></span><span class="icon-container slider-arrows__icon-container"><img class="image" src="assets/icons/icon-angle-right.svg"/></span></div>
       </section>
-      <section class="section">
+      <section class="section section--furtniture">
         <div class="left"><img class="image" src="assets/images/image-about-dark.jpg"/>
         </div>
-        <div class="main">
+        <div class="content--smaller">
           <h3 class="title title--h3">About our furtniture</h3>
           <p class="paragraph">
             Our multifunctional collection blends design and function to suit your

@@ -1,0 +1,10 @@
+@use "./../mixins/index" as mixins;
+
+.link {
+	@include mixins.link-h3-style();
+
+	color: #000000;
+	margin-top: 52px;
+	display: block;
+}
+

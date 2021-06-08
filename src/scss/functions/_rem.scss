@@ -1,0 +1,6 @@
+@use "./../config/index" as config;
+
+@function rem($px) {
+	@return ($px / config.$base-font) * 1rem;
+}
+

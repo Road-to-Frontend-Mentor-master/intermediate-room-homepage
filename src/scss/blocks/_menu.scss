@@ -1,0 +1,30 @@
+.menu-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom, white 113px, #00000088 113px);
+	width: 100%;
+	padding: 47px 33px 47px 26px;
+	display: flex;
+	align-items: flex-start;
+	height: 100%;
+	display: none;
+
+	&__close-icon {
+		margin-right: 66px;
+	}
+}
+
+.menu {
+		display: flex;
+
+	&__item:not(:last-child) {
+		margin-right: 38px;
+	}
+
+	&__link {
+		font-size: 12px;
+		color: black;
+	}
+}
+

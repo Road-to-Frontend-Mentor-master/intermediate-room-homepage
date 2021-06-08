@@ -1,0 +1,15 @@
+.main-navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	padding: 48px 0 0 24px;
+	width: 100%;
+	z-index: 100;
+
+	&__logo {
+		margin-left: calc(50% - 31px);
+		transform: translateX(-50%);
+	}
+}
+

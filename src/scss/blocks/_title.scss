@@ -1,0 +1,17 @@
+@use "./../mixins/index" as mixins;
+@use "./../functions/index" as functions;
+
+.title {
+		
+	&--h2 {
+		font-size: functions.rem(28px);
+		font-weight: 600;
+		line-height: 1.25;
+		margin-bottom: functions.rem(4px);
+	}
+
+	&--h3 {
+		@include mixins.link-h3-style();
+	}
+}
+
