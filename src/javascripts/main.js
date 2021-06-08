@@ -1,5 +1,12 @@
-import {toLower} from './utils/strings'
+const navDOMEl = document.getElementById('nav')
 
-console.log(toLower('testing'))
-console.log('this is a test')
+const handleWindowScroll = navDOMEl => {
+  if (window.scrollY <= 200) {
+    navDOMEl.classList.remove('main-navigation--not-on-top')
+  } else {
+    navDOMEl.classList.add('main-navigation--not-on-top')
+  }
+}
+
+window.addEventListener('scroll', () => handleWindowScroll(navDOMEl))
 
